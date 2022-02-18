@@ -1,0 +1,6 @@
+<mat-grid-list *ngFor="let item of selectedItem" cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <p style="padding: 2%;">Name: {{item.name}}</p>
+        <p style="padding: 2%;">Price: {{item.price}}<button (click)="sendProductCart(item)">BUY</button></p>
+    </mat-grid-tile>
+</mat-grid-list>

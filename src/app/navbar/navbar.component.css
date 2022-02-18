@@ -1,0 +1,7 @@
+#items_navbar{
+    display: grid;
+    text-align: end;
+}
+#shopping_cart{
+    margin-left: auto;
+}

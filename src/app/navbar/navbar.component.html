@@ -1,0 +1,22 @@
+<div>
+    <mat-toolbar color="danger">
+        <div id="items_navbar">
+            <div>
+                <h1>Bienvenido a {{ title }}!</h1>
+            </div>
+            <div>
+                <button mat-button [matMenuTriggerFor]="menu">Categorias</button>
+                <mat-menu #menu="matMenu">
+                    <div *ngFor="let i of item">
+                        <button (click)="selectCategory(i)" mat-menu-item>{{i.name}}</button>
+                    </div>
+                </mat-menu>
+            </div>
+        </div>
+        <!-- <div id="shopping_cart">
+            <button>
+                <mat-icon aria-hidden="false" aria-label="">shop</mat-icon>
+            </button>
+        </div> -->
+    </mat-toolbar>
+</div>
